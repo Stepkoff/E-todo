@@ -1,0 +1,48 @@
+@import '../../App/globalStyles/variables'
+.todoItem
+  margin: 0 0 10px
+  button
+    cursor: pointer
+    display: flex
+    padding: 2px
+    margin: 0
+    background: none
+    border: none
+  .container
+    border-radius: 10px
+    padding: 10px
+    position: relative
+    background-color: white
+    color: black
+    display: flex
+    align-items: center
+    gap: 20px
+    //.check
+    .text
+      flex: 1
+      .title
+        font-size: 16px
+      .subtitle
+        font-size: 12px
+    //.repeat
+    //.delete
+    //.edit
+  .container.done
+    color: grey
+    .check
+      color: lightskyblue
+    .text
+      .title
+        text-decoration: line-through
+    .repeat
+      color: lightgray
+      &:hover
+        color: #0E1621
+    .delete
+      color: lightgray
+      &:hover
+        color: #0E1621
+    .edit
+      color: lightgray
+      &:hover
+        color: #0E1621

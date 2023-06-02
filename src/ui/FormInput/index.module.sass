@@ -1,0 +1,36 @@
+@import "src/App/globalStyles/variables"
+.formInput
+  margin-bottom: 15px
+  position: relative
+  .error
+    color: $errorMessage
+  label
+    pointer-events: none
+    position: absolute
+    left: 16px
+    padding: 0 5px
+    top: 11px
+    transition: .2s ease all
+    color: $inputText
+  input
+    width: 100%
+    outline: none
+    border: 2px solid $inputBorder
+    border-radius: $border_radius
+    padding: 10px
+    background: none
+    color: $text
+    font-size: 1rem
+    margin: 0 0 5px 0
+    &:hover
+      border-color: $hover
+    &:focus
+      border-color: $focus
+      ~ label
+        top: -7px
+        font-size: 12px
+        background-color: $inputBg
+    &:not(:placeholder-shown) ~ label
+      top: -7px
+      font-size: 12px
+      background-color: $inputBg

@@ -1,0 +1,43 @@
+@import './src/App/globalStyles/variables'
+.sidebar
+  .overlay
+    background-color: rgba(0, 0, 0, 0.30)
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 10
+  .content
+    display: flex
+    flex-direction: column
+    background-color: $bg_light
+    width: 230px
+    height: 100vh
+    padding: 10px 5px 5px
+    gap: 20px
+    .logout
+      margin-top: auto
+    @media screen and (max-width: 800px)
+      width: 0
+      padding: 0
+      overflow: hidden
+    .sidebarBurgerBtn
+      display: none
+      background: none
+      border: none
+      cursor: pointer
+      color: $text
+      @media screen and (max-width: 800px)
+        display: flex
+        position: absolute
+        top: 5px
+        left: 5px
+.sidebarOpened
+  .content
+    position: absolute
+    z-index: 20
+    padding: 40px 5px 5px
+    width: 230px
+  .sidebarBurgerBtn
+    position: static

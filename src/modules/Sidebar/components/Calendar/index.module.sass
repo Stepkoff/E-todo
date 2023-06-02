@@ -1,0 +1,36 @@
+@import "./src/App/globalStyles/variables"
+.calendar
+  .header
+    display: flex
+    align-items: center
+    gap: 5px
+    .header__title
+      line-height: 20px
+      font-weight: 700
+    .header__btn
+      margin-left: auto
+      background: none
+      border: none
+      color: $text
+      display: grid
+      place-items: center
+      cursor: pointer
+  .content
+    padding: 10px 0 0 28px
+    display: flex
+    flex-direction: column
+    gap: 7px
+    transition: 0.5s ease opacity
+    max-height: 200px
+    opacity: 1
+    .content__btn
+      text-align: left
+      background: none
+      color: $text
+      font-size: 1rem
+      cursor: pointer
+      border: none
+  .contentHidden
+    max-height: 0
+    overflow: hidden
+    opacity: 0

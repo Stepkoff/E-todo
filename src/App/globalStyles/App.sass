@@ -1,0 +1,29 @@
+@import variables
+*,
+*::before,
+*::after
+  margin: 0
+  padding: 0
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+a
+  text-decoration: none
+html, body
+  font-family: Roboto, sans-serif
+  color: $text
+body
+  background-color: $main-bg
+  &::-webkit-scrollbar
+    width: 7px
+  &::-webkit-scrollbar-track
+    background: $scrollBar_bg
+    border-radius: 5px
+  &::-webkit-scrollbar-thumb
+    border-radius: 10px
+    background: $scrollBar_thumb
+a
+  color: $linkColor
+.modalOpen
+  overflow: hidden
+button
+  margin: 0

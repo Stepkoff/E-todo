@@ -1,0 +1,33 @@
+@import "./src/App/globalStyles/variables"
+.projects
+  .header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    .header__left
+      display: flex
+      align-items: center
+      gap: 5px
+      .title
+        font-weight: 400
+    .header__buttons
+      display: flex
+      gap: 8px
+      button
+        border: none
+        cursor: pointer
+        background: none
+        color: $text
+        display: grid
+        place-items: center
+  .content
+    display: flex
+    flex-direction: column
+    gap: 7px
+    padding: 10px 0 0 28px
+    max-height: 100px
+    opacity: 1
+    transition: 0.5s ease opacity
+  .contentHidden
+    max-height: 0
+    opacity: 0

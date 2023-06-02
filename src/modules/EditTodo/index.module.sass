@@ -1,0 +1,23 @@
+@import "src/App/globalStyles/variables"
+.editTodo
+  @media screen and (min-width: 800px)
+    width: 270px
+  .content
+    width: 270px
+    padding: 10px 5px 5px
+    min-height: 100vh
+    background-color: $bg_light
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 20
+    height: 100%
+  .overlay
+    display: block
+    background-color: rgba(0, 0, 0, 0.3)
+    position: absolute
+    z-index: 10
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
