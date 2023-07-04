@@ -5,8 +5,11 @@
   width: 100%
   border-radius: $border_radius
   padding: 5px
+  /* fall-back */
   min-height: 100vh
+  min-height: -moz-available
   min-height: -webkit-fill-available
+  min-height: fill-available
   overflow-y: scroll
   &::-webkit-scrollbar
     width: 7px
